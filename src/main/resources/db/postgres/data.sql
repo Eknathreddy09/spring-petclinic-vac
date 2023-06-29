@@ -51,3 +51,5 @@ INSERT INTO visits VALUES (1, 7, '2010-03-04', 'rabies shot') ON CONFLICT (id) D
 INSERT INTO visits VALUES (2, 8, '2011-03-04', 'rabies shot') ON CONFLICT (id) DO NOTHING;
 INSERT INTO visits VALUES (3, 8, '2009-06-04', 'neutered') ON CONFLICT (id) DO NOTHING;
 INSERT INTO visits VALUES (4, 7, '2008-09-04', 'spayed') ON CONFLICT (id) DO NOTHING;
+SELECT setval('"owners_id_seq"',10,true);
+SELECT setval('"visits_id_seq"',4,true);
