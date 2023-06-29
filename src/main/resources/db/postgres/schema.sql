@@ -50,3 +50,9 @@ CREATE TABLE IF NOT EXISTS visits (
   description TEXT
 );
 CREATE INDEX ON visits (pet_id);
+SELECT setval('"owners_id_seq"',10,true);
+SELECT setval('"pets_id_seq"',13,true);
+SELECT setval('"specialties_id_seq"',3,true);
+SELECT setval('"types_id_seq"',6,true);
+SELECT setval('"vets_id_seq"',6,true);
+SELECT setval('"visits_id_seq"',4,true);
